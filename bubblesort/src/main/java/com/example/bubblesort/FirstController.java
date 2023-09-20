@@ -4,6 +4,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
+
 @Controller
 public class FirstController{
     
@@ -22,7 +23,7 @@ public class FirstController{
     public String main(ModelMap model){
         // Iterable<Table> tables = tableRepository.findAll();
         model.addAttribute("tables", "erzhena");
-        System.out.println(model);
+        System.out.println("model");
         return "home";
     }
 
