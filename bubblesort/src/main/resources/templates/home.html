@@ -14,8 +14,18 @@
       <input type="text" name="name" placeholder="" />
       <button type="submit">Добавить</button>
     </form>
-    <div th:each="el: ${bubbles}">
-      <h3 th:text="${el.name}"></h3>
-    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Значения:</th>
+        </tr>
+      </thead>
+      <tbody scope="row">
+      <div th:each="el: ${bubbles}">
+        <tr>
+          <td th:text="${el.name}"></td>
+        </tr>
+      </tbody></div>
+    </table>
   </body>
 </html>
