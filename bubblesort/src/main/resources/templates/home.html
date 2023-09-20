@@ -9,15 +9,20 @@
     />
   </head>
   <body>
-    <!-- <form method="post">
-      <input type="text" name="name" placeholder="Введите сообщение" />
+    <form method="post">
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="Введите сообщение"
+      />
       <button type="submit">Добавить</button>
-    </form> -->
+    </form>
 
-    <p th:text="${tables}"></p>
-    <!-- <div th:each="el: ${tables}">
-      <h3 th:text="${el.name}"></h3> 
-    </div> -->
+    <!-- <p th:text="${tables}"></p> -->
+    <div th:each="el: ${bubbles}">
+      <h3 th:text="${el.name}"></h3>
+    </div>
     <p>BubbleSort</p>
   </body>
 </html>

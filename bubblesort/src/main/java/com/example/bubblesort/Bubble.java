@@ -5,17 +5,18 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
 @Entity
-public class Table {
+public class Bubble {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long  id;
     private String name;
 
-    public Table() {
+    public Bubble() {
     }
 
-    public Table(String name) {
+    public Bubble(String name) {
         this.name = name;
     }
 

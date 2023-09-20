@@ -1,39 +1,45 @@
 package com.example.bubblesort;
+import java.sql.SQLException;
+import java.util.Map;
+
+import org.h2.tools.Server;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 
 @Controller
 public class FirstController{
     
-    // @Autowired
-    // private TableRepository tableRepository;
-
-    // @GetMapping
-    // public String main(Map<String, Object> model){
-    //     // Iterable<Table> tables = tableRepository.findAll();
-    //     // model.put("tables", tables);
-    //     System.out.println("gggd");
-    //     return "home";
-    // }
-
-    @GetMapping("/")
-    public String main(ModelMap model){
-        // Iterable<Table> tables = tableRepository.findAll();
-        model.addAttribute("tables", "erzhena");
-        System.out.println("model");
-        return "home";
+    @Profile("dev")
+    @Bean(initMethod = "start", destroyMethod = "stop")
+    public Server h2Server() throws SQLException {
+	return Server.createTcpServer("-tcp","-tcpAllowOthers","-tcpPort","9092");
     }
 
-    // @PostMapping
-    // public String add(@RequestParam String name, Map<String, Object> model){
-    //     Table table = new Table(name);
-    //     tableRepository.save(table);
-    //     Iterable<Table> tables = tableRepository.findAll();
-    //     model.put("tables", tables);
-    //     System.out.println(model);
-    //     return "home";
-    // }
+    @Autowired
+    private BubbleRepository bubbleRepository;
+
+    @GetMapping("/")
+    public String main(Map<String, Object> model){
+    Iterable<Bubble> bubbles = bubbleRepository.findAll();
+    model.put("bubbles", bubbles);
+    System.out.println("gggd");
+    return "home";
+    }
+
+    @PostMapping("/")
+    public String add(@RequestParam String name, Map<String, Object> model){
+    Bubble bubble= new Bubble(name);
+    bubbleRepository.save(bubble);
+    Iterable<Bubble> bubbles = bubbleRepository.findAll();
+    model.put("bubbles", bubbles);
+    System.out.println(model);
+    return "home";
+    }
 }
