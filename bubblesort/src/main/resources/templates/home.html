@@ -10,19 +10,12 @@
   </head>
   <body>
     <form method="post">
-      <input
-        id="name"
-        type="text"
-        name="name"
-        placeholder="Введите сообщение"
-      />
+      <h3>Введите пять чисел от 0 до 9 (без запятых и пробелов)</h3>
+      <input type="text" name="name" placeholder="" />
       <button type="submit">Добавить</button>
     </form>
-
-    <!-- <p th:text="${tables}"></p> -->
     <div th:each="el: ${bubbles}">
       <h3 th:text="${el.name}"></h3>
     </div>
-    <p>BubbleSort</p>
   </body>
 </html>
