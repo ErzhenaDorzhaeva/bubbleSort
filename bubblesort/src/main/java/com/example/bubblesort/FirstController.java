@@ -57,4 +57,11 @@ public class FirstController{
     return "home";
     }
 
+    @GetMapping("/search")
+    public String search(@RequestParam String name, Map<String, Object> model){
+        Iterable<Bubble> bubbles = bubbleRepository.findByName(name);
+    model.put("bubbles", bubbles);
+    return "home";
+    }
+
 }
