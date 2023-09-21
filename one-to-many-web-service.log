@@ -4629,3 +4629,147 @@ com.example.bubblesort.FirstController#main(Map) mapped.
 2023-09-21T18:16:22.689+08:00  INFO 57828 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2023-09-21T18:16:22.689+08:00  INFO 57828 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2023-09-21T18:16:22.691+08:00  INFO 57828 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-21T18:18:05.034+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Starting BubblesortApplication using Java 17.0.8.1 with PID 59553 (/home/erzhena/workspace/bubblesort/bubblesort/target/classes started by erzhena in /home/erzhena/workspace/bubblesort)
+2023-09-21T18:18:05.066+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T18:18:05.387+08:00  INFO 59553 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-21T18:18:05.387+08:00  INFO 59553 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-21T18:18:07.943+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:18:07.946+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-21T18:18:08.065+08:00  INFO 59553 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.bubblesort.BubbleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-09-21T18:18:08.068+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 0 JDBC repository interfaces.
+2023-09-21T18:18:08.118+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:18:08.122+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T18:18:08.191+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-09-21T18:18:10.766+08:00  INFO 59553 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T18:18:10.825+08:00  INFO 59553 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T18:18:10.829+08:00  INFO 59553 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-21T18:18:11.026+08:00  INFO 59553 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T18:18:11.030+08:00  INFO 59553 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5639 ms
+2023-09-21T18:18:11.134+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-21T18:18:11.675+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-09-21T18:18:11.683+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-21T18:18:11.733+08:00  INFO 59553 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2023-09-21T18:18:12.300+08:00  INFO 59553 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T18:18:12.468+08:00  INFO 59553 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-21T18:18:12.472+08:00  INFO 59553 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-21T18:18:13.030+08:00  INFO 59553 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:18:13.347+08:00  INFO 59553 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T18:18:14.038+08:00  INFO 59553 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:18:15.452+08:00  INFO 59553 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T18:18:15.536+08:00  INFO 59553 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T18:18:16.541+08:00  WARN 59553 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T18:18:17.471+08:00  INFO 59553 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-21T18:18:17.565+08:00  INFO 59553 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-21T18:18:17.609+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Started BubblesortApplication in 13.783 seconds (process running for 15.295)
+2023-09-21T18:21:19.258+08:00  INFO 59553 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-21T18:21:19.260+08:00  INFO 59553 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-21T18:21:19.265+08:00  INFO 59553 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-09-21T18:34:17.891+08:00  INFO 59553 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-21T18:34:17.905+08:00  INFO 59553 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-21T18:34:17.929+08:00  INFO 59553 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-21T18:34:17.943+08:00  INFO 59553 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T18:34:18.157+08:00  WARN 59553 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-09-21T18:34:18.162+08:00  INFO 59553 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-09-21T18:34:18.173+08:00  INFO 59553 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-09-21T18:34:18.378+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Starting BubblesortApplication using Java 17.0.8.1 with PID 59553 (/home/erzhena/workspace/bubblesort/bubblesort/target/classes started by erzhena in /home/erzhena/workspace/bubblesort)
+2023-09-21T18:34:18.379+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T18:34:18.821+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:34:18.821+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-21T18:34:18.825+08:00  INFO 59553 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.bubblesort.BubbleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-09-21T18:34:18.826+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 0 JDBC repository interfaces.
+2023-09-21T18:34:18.831+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:34:18.832+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T18:34:18.840+08:00  INFO 59553 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interfaces.
+2023-09-21T18:34:19.057+08:00  INFO 59553 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T18:34:19.058+08:00  INFO 59553 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T18:34:19.059+08:00  INFO 59553 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-21T18:34:19.076+08:00  INFO 59553 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T18:34:19.077+08:00  INFO 59553 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2023-09-21T18:34:19.108+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-09-21T18:34:19.114+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:testdb user=SA
+2023-09-21T18:34:19.117+08:00  INFO 59553 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-09-21T18:34:19.119+08:00  INFO 59553 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2023-09-21T18:34:19.183+08:00  INFO 59553 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T18:34:19.193+08:00  INFO 59553 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:34:19.194+08:00  INFO 59553 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T18:34:19.209+08:00  INFO 59553 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:34:19.257+08:00  INFO 59553 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T18:34:19.266+08:00  INFO 59553 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T18:34:19.412+08:00  WARN 59553 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T18:34:19.667+08:00  INFO 59553 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-21T18:34:19.680+08:00  INFO 59553 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-21T18:34:19.687+08:00  INFO 59553 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Started BubblesortApplication in 1.368 seconds (process running for 977.374)
+2023-09-21T18:34:19.691+08:00  INFO 59553 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-09-21T18:36:52.428+08:00  INFO 59553 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-21T18:36:52.429+08:00  INFO 59553 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-21T18:36:52.432+08:00  INFO 59553 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-09-21T18:49:46.159+08:00  INFO 71644 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Starting BubblesortApplication using Java 17.0.8.1 with PID 71644 (/home/erzhena/workspace/bubblesort/bubblesort/target/classes started by erzhena in /home/erzhena/workspace/bubblesort)
+2023-09-21T18:49:46.163+08:00  INFO 71644 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T18:49:46.260+08:00  INFO 71644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-21T18:49:46.260+08:00  INFO 71644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-21T18:49:47.035+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:49:47.037+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-21T18:49:47.084+08:00  INFO 71644 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.bubblesort.BubbleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-09-21T18:49:47.085+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 0 JDBC repository interfaces.
+2023-09-21T18:49:47.145+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:49:47.147+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T18:49:47.205+08:00  INFO 71644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 JPA repository interfaces.
+2023-09-21T18:49:48.122+08:00  INFO 71644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T18:49:48.135+08:00  INFO 71644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T18:49:48.136+08:00  INFO 71644 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-21T18:49:48.246+08:00  INFO 71644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T18:49:48.248+08:00  INFO 71644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1986 ms
+2023-09-21T18:49:48.317+08:00  INFO 71644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-21T18:49:48.649+08:00  INFO 71644 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-09-21T18:49:48.652+08:00  INFO 71644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-21T18:49:48.669+08:00  INFO 71644 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2023-09-21T18:49:48.895+08:00  INFO 71644 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T18:49:48.985+08:00  INFO 71644 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-21T18:49:48.989+08:00  INFO 71644 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-21T18:49:49.205+08:00  INFO 71644 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:49:49.399+08:00  INFO 71644 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T18:49:49.755+08:00  INFO 71644 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:49:50.520+08:00  INFO 71644 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T18:49:50.574+08:00  INFO 71644 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T18:49:51.040+08:00  WARN 71644 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T18:49:51.550+08:00  INFO 71644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-21T18:49:51.597+08:00  INFO 71644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-21T18:49:51.635+08:00  INFO 71644 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Started BubblesortApplication in 5.996 seconds (process running for 6.689)
+2023-09-21T18:50:09.890+08:00  INFO 71644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-21T18:50:09.890+08:00  INFO 71644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-21T18:50:09.892+08:00  INFO 71644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-09-21T18:52:28.074+08:00  INFO 73005 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Starting BubblesortApplication using Java 17.0.8.1 with PID 73005 (/home/erzhena/workspace/bubblesort/bubblesort/target/classes started by erzhena in /home/erzhena/workspace/bubblesort)
+2023-09-21T18:52:28.078+08:00  INFO 73005 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-09-21T18:52:28.181+08:00  INFO 73005 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-21T18:52:28.182+08:00  INFO 73005 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-21T18:52:28.998+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:52:28.999+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-21T18:52:29.038+08:00  INFO 73005 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.bubblesort.BubbleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-09-21T18:52:29.039+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 JDBC repository interfaces.
+2023-09-21T18:52:29.080+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-09-21T18:52:29.083+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-21T18:52:29.139+08:00  INFO 73005 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2023-09-21T18:52:30.063+08:00  INFO 73005 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-09-21T18:52:30.076+08:00  INFO 73005 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-21T18:52:30.077+08:00  INFO 73005 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-21T18:52:30.160+08:00  INFO 73005 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-21T18:52:30.161+08:00  INFO 73005 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1978 ms
+2023-09-21T18:52:30.232+08:00  INFO 73005 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-09-21T18:52:30.479+08:00  INFO 73005 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2023-09-21T18:52:30.482+08:00  INFO 73005 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-09-21T18:52:30.506+08:00  INFO 73005 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2023-09-21T18:52:30.786+08:00  INFO 73005 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-21T18:52:30.866+08:00  INFO 73005 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-21T18:52:30.869+08:00  INFO 73005 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-09-21T18:52:31.083+08:00  INFO 73005 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:52:31.253+08:00  INFO 73005 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-21T18:52:31.542+08:00  INFO 73005 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-09-21T18:52:32.186+08:00  INFO 73005 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-21T18:52:32.234+08:00  INFO 73005 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-21T18:52:32.672+08:00  WARN 73005 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-21T18:52:33.177+08:00  INFO 73005 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-09-21T18:52:33.224+08:00  INFO 73005 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-21T18:52:33.243+08:00  INFO 73005 --- [restartedMain] c.e.bubblesort.BubblesortApplication     : Started BubblesortApplication in 5.637 seconds (process running for 6.236)
+2023-09-21T18:52:45.793+08:00  INFO 73005 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-21T18:52:45.793+08:00  INFO 73005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-21T18:52:45.794+08:00  INFO 73005 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
