@@ -34,7 +34,6 @@ public class FirstController{
     public String add(@RequestParam String name, Map<String, Object> model){
         
         char[] charArray = name.toCharArray();
-
         boolean check=true;
         while(check == true){
             check = false;
